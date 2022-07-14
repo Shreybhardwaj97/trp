@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Square+Peg&display=swap");
+
+
+
+:root {
+  --body-bg: hsl(0deg 0% 22%);
+  --box-bg: hsl(0deg 0% 27%);
+  --dark-bg: hsl(0deg 0% 16%);
+  --white: white;
+  --color-blues: hsl(225, 100%, 60%);
+  --blue: #53abf5;
+  --orange: #ffbd53;
+  --shadow: 0px 0px 25px 4px #2929296e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.mid-dark {
+  background-color: var(--body-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-semi-dark {
+  background-color: var(--box-bg);
+}
+
+.bg-dark-sec {
+  background-color: var(--dark-bg);
+}
+
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+.logo-header{
+  width: 200px;
+}
+.main-box{
+  background-image: url(../images/bg.webp);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-inner{
+  background-color: rgba(0, 0, 0, 0.692);
+}
+.text-white-80{
+  color: rgb(255 255 255 / 74%)!important;
+}
+.timer-text{
+  font-size: 50px;
+}
+
+
+
+
+/* ======= MOBILE RESPONSIVE MEDIA QUERY CSS ====== */
+@media only screen and (max-width: 600px) {
+ 
+}
+
+
+/* ====== TABLET RESPONSIVE QUERY CSS ====== */
+@media (min-width: 481px) and (max-width: 769px) {
+ 
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>TRP - Redifining Construction</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+    <section class="main-box pt-lg-5 pb-lg-5">
+        <div class="container p-5">
+            <div class="row m-0 p-0 bg-inner p-lg-5">
+                <div class="col-md-12 col-lg-12 pt-lg-5 pb-lg-5">
+                    <div class="text-center">
+                        <img src="images/logo.png">
+                        <h1 class="text-white-80 mt-4 fw-light">We Are Expanding<span class="fw-semibold text-white"> Soon !</span></h1>
+                        <p class="timer-text text-white mt-5" id="demo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+            
+          var days = Math.floor(distance / (1000 * 60 * 12000 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
+</body>
+
+</html>
